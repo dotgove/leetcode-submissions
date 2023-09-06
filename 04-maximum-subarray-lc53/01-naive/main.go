@@ -1,5 +1,5 @@
 package main
 
 func maxSubArray(nums []int) int {
-	panic("Not implemented")
+	panic("Not Implemented")
 }
