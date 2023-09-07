@@ -1,14 +1,12 @@
 package maxsubarraylc53
 
+// Kadane's Algo
 func maxSubArray(nums []int) int {
 	allTimeMax := nums[0]
-	for i := 0; i < len(nums); i++ {
-		currentTotal := nums[i]
-		currentMax := currentTotal
-		for j := i + 1; j < len(nums); j++ {
-			if currentTotal += nums[j]; currentTotal > currentMax {
-				currentMax = currentTotal
-			}
+	currentMax := nums[0]
+	for i := 1; i < len(nums); i++ {
+		if currentMax += nums[i]; currentMax < nums[i] {
+			currentMax = nums[i]
 		}
 		if currentMax > allTimeMax {
 			allTimeMax = currentMax
