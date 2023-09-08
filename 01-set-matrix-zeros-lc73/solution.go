@@ -1,10 +1,4 @@
-package main
-
-/*
-	LC Stats:
-	Runtime: 7 ms, faster than 86.36% of Go online submissions for Set Matrix Zeroes.
-	Memory Usage: 5.7 MB, less than 92.73% of Go online submissions for Set Matrix Zeroes.
-*/
+package setmatrixzeroslc73
 
 func setZeroes(matrix [][]int) {
 	var hasFirstRowZero, hasFirstColZero bool
