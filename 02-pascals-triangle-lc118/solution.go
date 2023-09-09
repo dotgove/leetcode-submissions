@@ -1,4 +1,4 @@
-package main
+package pascalstrianglelc118
 
 func generate(numRows int) [][]int {
 	triangle := make([][]int, numRows)
