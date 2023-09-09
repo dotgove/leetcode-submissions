@@ -1,11 +1,5 @@
 package main
 
-/*
-Stats
-	Runtime: 1 ms, faster than 90.55% of Go online submissions for Pascal's Triangle.
-	Memory Usage: 2.3 MB, less than 100.00% of Go online submissions for Pascal's Triangle.
-*/
-
 func generate(numRows int) [][]int {
 	triangle := make([][]int, numRows)
 
