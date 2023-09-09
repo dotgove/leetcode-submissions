@@ -1,4 +1,4 @@
-package main
+package nextpermutationlc31
 
 func nextPermutation(nums []int) {
 	// Comparing consecutive values from the right, find the index i with first smallest value
