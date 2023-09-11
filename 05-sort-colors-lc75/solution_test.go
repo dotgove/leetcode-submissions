@@ -25,9 +25,11 @@ func TestSortColors(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
+			original := make([]int, len(tc.input))
+			copy(tc.input, tc.input)
 			sortColors(tc.input)
 			if !reflect.DeepEqual(tc.input, tc.expected) {
-				t.Errorf("sortColors(%v) = %v; want = %v", tc.input, tc.input, tc.expected)
+				t.Errorf("sortColors(%v) = %v; want = %v", original, tc.input, tc.expected)
 			}
 		})
 	}

@@ -18,9 +18,11 @@ func TestNextPermutation(t *testing.T) {
 
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
+			original := make([]int, len(tc.input))
+			copy(original, tc.input)
 			nextPermutation(tc.input)
 			if !reflect.DeepEqual(tc.input, tc.expected) {
-				t.Errorf("nextPermutation(%v) = %v; wanted = %v", tc.input, tc.input, tc.expected)
+				t.Errorf("nextPermutation(%v) = %v; wanted = %v", original, tc.input, tc.expected)
 			}
 		})
 	}
